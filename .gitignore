@@ -1,0 +1,11 @@
+a.out
+*~
+\#*\#
+*.o
+libmy.a
+vgcore.*
+test.c
+*.gcda
+*.gcno
+
+calc
