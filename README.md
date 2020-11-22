@@ -18,6 +18,8 @@ Just do :
 ```
 In a folder containing *.py, *.c or *.h files and every carriage return will magically vanish !
 
+---
+
 ### Automatic prototype creation
 
  Getting tired to type each prototype of your functions for all your projects?              
@@ -35,7 +37,6 @@ Then, just do :
 
 Now you have a proto.h file that you can copy the content to paste it in your actual proto file.
 
----
 ## Contribution
 
 
@@ -43,7 +44,6 @@ This project is community-based, so don't hesitate to make pull requests to push
 
 Here is a small tutorial if you don't know how to contribute : https://www.dataschool.io/how-to-contribute-on-github/
 
----
 ## Issues
 
 Don't hesitate to create new issues if you notice any kind of problems, crash or bugs in scripts 
