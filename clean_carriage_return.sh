@@ -6,6 +6,6 @@
 ## Remove carriage return (\r) from your files 
 ##
 
-for f in *.c; do sed -i 's/\r$//g' $f; done
-for f in *.h; do sed -i 's/\r$//g' $f; done
-for f in *.py; do sed -i 's/\r$//g' $f; done
+for f in *.c; do sed -i 's/\r$//g' $f &> /dev/null; done
+for f in *.h; do sed -i 's/\r$//g' $f &> /dev/null; done
+for f in *.py; do sed -i 's/\r$//g' $f &> /dev/null; done
