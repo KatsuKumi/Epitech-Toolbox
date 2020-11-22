@@ -7,3 +7,5 @@
 ##
 
 for f in *.c; do sed -i 's/\r$//g' $f; done
+for f in *.h; do sed -i 's/\r$//g' $f; done
+for f in *.py; do sed -i 's/\r$//g' $f; done
