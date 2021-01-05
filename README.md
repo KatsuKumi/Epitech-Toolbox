@@ -25,17 +25,10 @@ In a folder containing *.py, *.c or *.h files and every carriage return will mag
  Getting tired to type each prototype of your functions for all your projects?              
  Well, we also have the solution for you !
 
-First, you'll have to install cproto :
+Just do :
 ```bash
-sudo dnf install -y cproto 
+./auto_proto_creation.sh <your src folder>
 ```
-
-Then, just do :
-```bash
-./auto_proto_creation.sh <your src folder> <your include folder>
-```
-
-Now you have a proto.h file that you can copy the content to paste it in your actual proto file.
 
 ## Contribution
 
