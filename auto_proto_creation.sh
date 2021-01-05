@@ -11,4 +11,6 @@ if [[ -z "$1" ]]; then
     exit 0
 fi
 
-./makeheader $1/**/*.c -h
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+$DIR/makeheader $1/**/*.c -h
