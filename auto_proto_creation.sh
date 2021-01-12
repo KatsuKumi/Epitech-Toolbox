@@ -13,4 +13,4 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-$DIR/makeheader $1/**/*.c -h
+$DIR/makeheader $1/**/*.c -h | sed -e "s/,/, /g" | sed -r "s/( [\*]?)([a-zA-Z_]+)([,\)])/\1\3/g" | sed -r "s/ ([,\)])/\1/g"
