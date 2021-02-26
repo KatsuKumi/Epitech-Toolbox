@@ -13,4 +13,5 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-$DIR/makeheader $1/**/*.c -h | sed -e "s/,/, /g" | sed -r "s/( [\*]?)([a-zA-Z_]+)([,\)])/\1\3/g" | sed -r "s/ ([,\)])/\1/g"
+find $1 -name '*.c' -exec echo -e '\n/*-----------------{}----------------*/' \; -exec $DIR/makeheader {} -h \; | sed -e "s/,/, /g" | sed -r "s/( [\*]?)([a-zA-Z_]+)([,\)])/\1\3/g" | sed -r "s/ ([,\)])/\1/g" | grep -v "#define"
+## $DIR/makeheader $1/*.c -h | sed -e "s/,/, /g" | sed -r "s/( [\*]?)([a-zA-Z_]+)([,\)])/\1\3/g" | sed -r "s/ ([,\)])/\1/g"
